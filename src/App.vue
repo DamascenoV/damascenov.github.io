@@ -4,6 +4,8 @@ import CardBody from './components/ui/card-inspira/CardBody.vue';
 import CardItem from './components/ui/card-inspira/CardItem.vue';
 import AnimatedBeam from './components/ui/animated-beam/AnimatedBeam.vue';
 import { HoverCard, HoverCardTrigger, HoverCardContent } from './components/ui/hover-card';
+import Dock from './components/ui/dock/Dock.vue';
+import DockIcon from './components/ui/dock/DockIcon.vue';
 
 import { ref } from 'vue';
 const containerRef = ref<HTMLElement>();
@@ -17,9 +19,9 @@ const div7Ref = ref<HTMLElement>();
 </script>
 
 <template>
-  <div class="h-full w-full bg-black md:h-screen md:w-screen">
-    <div class="container">
-      <CardContainer class="my-8">
+  <div class="bg-black h-full w-full md:w-auto md:h-auto">
+    <div class="container mx-auto">
+      <CardContainer class="my-6">
         <CardBody
           class="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-zinc-950 dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
           <CardItem :translateZ="50" class="text-xl font-bold text-neutral-600 dark:text-white">
@@ -32,10 +34,6 @@ const div7Ref = ref<HTMLElement>();
             <CardItem :translateZ="100">
               <img src="https://avatars.githubusercontent.com/u/104433352?v=4" class="rounded rounded-full size-24" />
             </CardItem>
-            <!--CardItem :translateZ="20" as="button"
-              class="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold">
-              Get Started
-            </CardItem-->
             <CardItem :translateZ="20" as="a" href="https://github.com/DamascenoV" target="__blank"
               class="px-2 py-2 rounded-xl text-xs font-normal dark:text-white">
               <v-icon name="si-github" scale="1.5" title="Github" />
@@ -51,7 +49,7 @@ const div7Ref = ref<HTMLElement>();
           </div>
         </CardBody>
       </CardContainer>
-      <div class="flex flex-col items-center justify-center text-white mb-4">
+      <div class="flex flex-col items-center justify-center text-white">
         <div class="flex flex-col">
           <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/non">
             Skills
@@ -64,7 +62,7 @@ const div7Ref = ref<HTMLElement>();
         </div>
       </div>
       <div
-        class="relative flex h-[450px] w-full items-center justify-center overflow-hidden rounded-lg border bg-background bg-zinc-950 p-10 md:shadow-xl"
+        class="relative flex h-[450px] w-full items-center justify-center overflow-hidden rounded-lg border bg-background bg-zinc-950 md:shadow-xl"
         ref="containerRef">
         <div class="flex size-full flex-col max-w-lg max-h-[200px] items-stretch justify-between gap-10">
           <div class="flex flex-row items-center justify-between">
@@ -269,6 +267,19 @@ const div7Ref = ref<HTMLElement>();
         <AnimatedBeam :containerRef="containerRef" :fromRef="div6Ref" :toRef="div4Ref" :reverse="true" />
         <AnimatedBeam :containerRef="containerRef" :fromRef="div7Ref" :toRef="div4Ref" :curvature="75" :endYOffset="10"
           :reverse="true" />
+      </div>
+      <div class="my-6">
+        <Dock class="fixed bottom-0 left-1/2 transform -translate-x-1/2 mb-6 z-50">
+          <DockIcon>
+            <v-icon name="si-aboutdotme" color="white" scale="2" title="Flutter" />
+          </DockIcon>
+          <DockIcon>
+            <v-icon name="io-code-slash" color="white" scale="2" title="Flutter" />
+          </DockIcon>
+          <DockIcon>
+            <v-icon name="fa-folder-open" color="white" scale="2" title="Flutter" />
+          </DockIcon>
+        </Dock>
       </div>
     </div>
   </div>

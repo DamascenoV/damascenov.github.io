@@ -14,7 +14,10 @@ import {
   ViFileTypeLua,
   SiGithub,
   SiLinkedin,
-  BiX
+  BiX,
+  SiAboutdotme,
+  IoCodeSlash,
+  FaFolderOpen 
 } from "oh-vue-icons/icons";
 
 addIcons(
@@ -29,7 +32,10 @@ addIcons(
   ViFileTypeLua,
   SiGithub,
   SiLinkedin,
-  BiX
+  BiX,
+  SiAboutdotme,
+  IoCodeSlash,
+  FaFolderOpen
 )
 
 createApp(App).component("v-icon", OhVueIcon).mount('#app')

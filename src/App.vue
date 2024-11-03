@@ -10,6 +10,11 @@ import DockIcon from './components/ui/dock/DockIcon.vue';
       <div class="my-6">
         <Dock class="fixed bottom-0 left-1/2 transform -translate-x-1/2 mb-6 z-50">
           <DockIcon>
+            <RouterLink to="/">
+              <v-icon name="fa-home" color="white" scale="2" title="Home" />
+            </RouterLink>
+          </DockIcon>
+          <DockIcon>
             <RouterLink to="me">
               <v-icon name="si-aboutdotme" color="white" scale="2" title="Me" />
             </RouterLink>

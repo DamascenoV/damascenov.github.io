@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import { createMemoryHistory, createRouter } from 'vue-router'
+import { createWebHistory, createRouter } from 'vue-router'
 import App from './App.vue'
 import './assets/index.css'
 import { OhVueIcon, addIcons } from "oh-vue-icons"
@@ -18,11 +18,13 @@ import {
   BiX,
   SiAboutdotme,
   IoCodeSlash,
-  FaFolderOpen
+  FaFolderOpen,
+  FaHome
 } from "oh-vue-icons/icons"
 
 import Main from './view/Main.vue'
 import Me from './view/Me.vue'
+import Projects from './view/Projects.vue'
 
 addIcons(
   ViFileTypeGo,
@@ -39,16 +41,18 @@ addIcons(
   BiX,
   SiAboutdotme,
   IoCodeSlash,
-  FaFolderOpen
+  FaFolderOpen,
+  FaHome
 )
 
 const routes = [
   { path: '/', component: Main },
   { path: '/me', component: Me },
+  { path: '/projects', component: Projects },
 ]
 
 const router = createRouter({
-  history: createMemoryHistory(),
+  history: createWebHistory(),
   routes
 })
 

@@ -32,9 +32,9 @@ import { cn } from "@/lib/utils";
 
 type AnimatedBeamProps = {
         class?: string;
-        containerRef: HTMLElement;
-        fromRef: HTMLElement;
-        toRef: HTMLElement;
+        containerRef: HTMLElement | undefined;
+        fromRef: HTMLElement | undefined;
+        toRef: HTMLElement | undefined;
         curvature?: number;
         reverse?: boolean;
         pathColor?: string;

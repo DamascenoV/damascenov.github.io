@@ -13,7 +13,7 @@ if (month < 0 || (month === 0 && date.getDate() < birthDate.getDate())) {
 
 const words = `Hey there! I’m Victor Damasceno, a ${age}-year-old originally from Salvador, Bahia, Brazil, now based in Portugal.\n
 My programming journey kicked off in 2019, starting with C, C++, and C#. But as I stepped into the professional world, I dove into PHP and JavaScript, primarily working with Laravel and Vue.js.\n
-Beyond coding, I’m big into Neovim – I can spend hours customizing my setup to get everything just right. When I’m not deep into programming, you can usually find me jamming on my guitar to some heavy metal, gaming (mainly FPS games), or bingeing anime (Hunter X Hunter and Berserk are top-tier in my book). I also have a thing for tattoos and cars, so I’m always looking for new ink.\n
+Beyond coding, I’m big into Neovim – I can spend hours customizing my setup to get everything just right. When I’m not deep into programming, you can usually find me jamming on my guitar to some heavy metal, gaming (mainly FPS games), or bingeing anime (Hunter X Hunter, One Piece and Berserk are top-tier in my book). I also have a thing for tattoos and cars, so I’m always looking for new ink.\n
 It’s all about pushing limits, whether that’s in code, music, or life.
 `
 </script>

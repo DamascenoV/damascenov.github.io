@@ -25,6 +25,7 @@ import {
 import Main from './view/Main.vue'
 import Me from './view/Me.vue'
 import Projects from './view/Projects.vue'
+import Cv from './view/Cv.vue'
 
 addIcons(
   ViFileTypeGo,
@@ -49,6 +50,7 @@ const routes = [
   { path: '/', component: Main },
   { path: '/me', component: Me },
   { path: '/projects', component: Projects },
+  { path: '/cv', component: Cv }
 ]
 
 const router = createRouter({
